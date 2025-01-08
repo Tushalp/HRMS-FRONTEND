@@ -7,7 +7,7 @@ import axios from "axios";
 export const EmpEmployees = () => {
   const { id } = useParams();
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/user/employeePersonalDetails/" + id
+    "https://hrms-backend-tqlm.onrender.com/api/user/employeePersonalDetails/" + id
   );
   const [employee, setEmployee] = useState([]);
 

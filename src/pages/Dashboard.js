@@ -34,7 +34,7 @@ export const Dashboard = () => {
 
     try {
       await axios.post(
-        "http://localhost:8080/api/admin/logout",
+        "https://hrms-backend-tqlm.onrender.com/api/admin/logout",
         {},
         {
           headers: {

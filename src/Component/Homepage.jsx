@@ -41,7 +41,7 @@ export const Homepage = () => {
     }
 
     axios
-      .post("http://localhost:8080/api/user/signUp", formdata)
+      .post("https://hrms-backend-tqlm.onrender.com/api/user/signUp", formdata)
       .then((response) => {
         console.log("Response from server:", response.data);
         setSuccess("Signup successful!");

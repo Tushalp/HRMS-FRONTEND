@@ -5,7 +5,7 @@ import { MdDeleteOutline } from "react-icons/md";
 
 export const Table = () => {
   const [url, seturl] = useState(
-    "http://localhost:8080/api/admin/getallDocument"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/getallDocument"
   );
   const [announcement, setAnnouncement] = useState([]);
 
@@ -20,7 +20,7 @@ export const Table = () => {
 
   function handeldelete(id) {
     axios
-      .delete("http://localhost:8080/api/admin/deletedocument/" + id)
+      .delete("https://hrms-backend-tqlm.onrender.com/api/admin/deletedocument/" + id)
       .then((result) => {
         window.location.reload();
       });

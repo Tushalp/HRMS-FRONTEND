@@ -8,7 +8,7 @@ import { RxCross2 } from "react-icons/rx";
 
 export const Manageleave = () => {
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/admin/checkallLeave"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/checkallLeave"
   );
   const [employee, setEmployee] = useState([]);
   const [leave, setLeave] = useState();
@@ -25,7 +25,7 @@ export const Manageleave = () => {
 
   function checkhandler(id) {
     axios
-      .put("http://localhost:8080/api/admin/approveRequestbyAdmin/" + id)
+      .put("https://hrms-backend-tqlm.onrender.com/api/admin/approveRequestbyAdmin/" + id)
       .then((result) => {
         window.location.reload();
       });
@@ -33,7 +33,7 @@ export const Manageleave = () => {
 
   function crosshandler(id) {
     axios
-      .put("http://localhost:8080/api/admin/rejectRequestbyAdmin/" + id)
+      .put("https://hrms-backend-tqlm.onrender.com/api/admin/rejectRequestbyAdmin/" + id)
       .then((result) => {
         window.location.reload();
       });

@@ -42,7 +42,7 @@ export const Newpassword = () => {
 
     axios
       .post(
-        "http://localhost:8080/api/user/resetPassword/" + token,
+        "https://hrms-backend-tqlm.onrender.com/api/user/resetPassword/" + token,
         formdata
       )
       .then((response) => {

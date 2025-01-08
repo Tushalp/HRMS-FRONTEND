@@ -14,7 +14,7 @@ export const Employee = () => {
   const [excleerror, setExcleerror] = useState();
 
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/admin/getAllEmployee"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/getAllEmployee"
   );
   const [employee, setEmployee] = useState([]);
 
@@ -30,7 +30,7 @@ export const Employee = () => {
 
   function handledelete(id) {
     axios
-      .delete("http://localhost:8080/api/admin/deleteEmployee/" + id)
+      .delete("https://hrms-backend-tqlm.onrender.com/api/admin/deleteEmployee/" + id)
       .then((result) => {
         window.location.reload();
       });
@@ -43,7 +43,7 @@ export const Employee = () => {
     try {
 
       const response = await axios.get(
-        "http://localhost:8080/api/admin/getemployee/export",
+        "https://hrms-backend-tqlm.onrender.com/api/admin/getemployee/export",
         {
           responseType: "blob", 
         }
@@ -75,7 +75,7 @@ export const Employee = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/admin/import-and-send-emails",
+          "https://hrms-backend-tqlm.onrender.com/api/admin/import-and-send-emails",
           formData,
           {
             headers: {

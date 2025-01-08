@@ -47,7 +47,7 @@ export const Announcement = () => {
 
     axios
       .post(
-        "http://localhost:8080/api/admin/announcementdata/savedata",
+        "https://hrms-backend-tqlm.onrender.com/api/admin/announcementdata/savedata",
         formdata
       )
       .then((response) => {

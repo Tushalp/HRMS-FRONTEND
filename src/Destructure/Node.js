@@ -6,7 +6,7 @@ import axios from 'axios';
 export const Node = () => {
 
     const [url, setUrl] = useState(
-        "http://localhost:8080/api/admin/nodeEmployeeData"
+        "https://hrms-backend-tqlm.onrender.com/api/admin/nodeEmployeeData"
       );
       const [employee, setEmployee] = useState([]);
       const [amount, setAmount] = useState();

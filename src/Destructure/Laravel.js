@@ -6,7 +6,7 @@ import axios from 'axios';
 export const Laravel = () => {
 
     const [url, setUrl] = useState(
-        "http://localhost:8080/api/admin/laravelEmployeeData"
+        "https://hrms-backend-tqlm.onrender.com/api/admin/laravelEmployeeData"
       );
       const [employee, setEmployee] = useState([]);
       const [amount, setAmount] = useState();

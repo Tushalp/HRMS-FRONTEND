@@ -6,7 +6,7 @@ import axios from 'axios';
 export const Myrea = () => {
 
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/admin/reactEmployeeData"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/reactEmployeeData"
   );
   const [employee, setEmployee] = useState([]);
   const [amount, setAmount] = useState();

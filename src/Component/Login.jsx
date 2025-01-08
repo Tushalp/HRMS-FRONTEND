@@ -34,7 +34,7 @@ export const Login = () => {
     }
 
     axios
-      .post("http://localhost:8080/api/admin/login", formdata)
+      .post("https://hrms-backend-tqlm.onrender.com/api/admin/login", formdata)
       .then((response) => {
         console.log("Response from server:", response.data);
         localStorage.setItem("token", response.data.token);

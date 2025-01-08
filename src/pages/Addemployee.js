@@ -78,7 +78,7 @@ export const Addemployee = () => {
     }
 
     axios
-      .post("http://localhost:8080/api/admin/employeeAlldetails", formdata)
+      .post("https://hrms-backend-tqlm.onrender.com/api/admin/employeeAlldetails", formdata)
       .then((response) => {
         console.log("Response from server:", response.data);
         setSuccess("Add employee successful!");

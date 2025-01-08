@@ -6,7 +6,7 @@ import axios from 'axios';
 export const Mern = () => {
 
     const [url, setUrl] = useState(
-        "http://localhost:8080/api/admin/mernEmployeeData"
+        "https://hrms-backend-tqlm.onrender.com/api/admin/mernEmployeeData"
       );
       const [employee, setEmployee] = useState([]);
       const [amount, setAmount] = useState();

@@ -35,7 +35,7 @@ export const Employeelogin = () => {
     }
 
     axios
-      .post("http://localhost:8080/api/user/employee/login", formdata)
+      .post("https://hrms-backend-tqlm.onrender.com/api/user/employee/login", formdata)
       .then((response) => {
         console.log("Response from server:", response.data);
         console.log(response.data.token);

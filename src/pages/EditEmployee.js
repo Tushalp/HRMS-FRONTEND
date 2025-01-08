@@ -24,7 +24,7 @@ export const EditEmployee = () => {
   const [error, setError] = useState("");
 
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/admin/adminGetEmployee/" + id
+    "https://hrms-backend-tqlm.onrender.com/api/admin/adminGetEmployee/" + id
   );
 
   console.log("Member");

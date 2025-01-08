@@ -46,7 +46,7 @@ export const EmpApplyleav = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:8080/api/user/leaveapply",
+        "https://hrms-backend-tqlm.onrender.com/api/user/leaveapply",
         formdata,
         {
           headers: { Authorization: `Bearer ${token}` },

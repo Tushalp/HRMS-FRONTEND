@@ -9,7 +9,7 @@ export const Empleave = () => {
   const { id } = useParams();
 
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/user/checkallleavesbyemployee/" + id
+    "https://hrms-backend-tqlm.onrender.com/api/user/checkallleavesbyemployee/" + id
   );
   const [employee, setEmployee] = useState([]);
 

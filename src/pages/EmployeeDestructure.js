@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 export const EmployeeDestructure = () => {
   const [urlone, setUrlone] = useState(
-    "http://localhost:8080/api/admin/employeeCountsByTechnology"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/employeeCountsByTechnology"
   );
   const [dataone, setDataone] = useState("");
 

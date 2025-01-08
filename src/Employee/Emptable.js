@@ -6,7 +6,7 @@ import { MdDeleteOutline } from "react-icons/md";
 export const Emptable = () => {
 
     const [url, seturl] = useState(
-        "http://localhost:8080/api/user/getAllAnnouncementbyEmployee"
+        "https://hrms-backend-tqlm.onrender.com/api/user/getAllAnnouncementbyEmployee"
       );
       const [announcement, setAnnouncement] = useState([]);
     

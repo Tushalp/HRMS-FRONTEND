@@ -24,7 +24,7 @@ ChartJS.register(
 
 export const Leavegraph = () => {
   const [url, setUrl] = useState(
-    "http://localhost:8080/api/admin/getAllEmployee"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/getAllEmployee"
   );
   const [employee, setEmployee] = useState([]);
 

@@ -36,7 +36,7 @@ export const Password = () => {
     }
 
     axios
-      .post("http://localhost:8080/api/user/forgotPassword", formdata)
+      .post("https://hrms-backend-tqlm.onrender.com/api/user/forgotPassword", formdata)
       .then((response) => {
         console.log("Response from server:", response.data);
         setSuccess("successful!");

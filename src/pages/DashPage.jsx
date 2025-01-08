@@ -12,17 +12,17 @@ import { IoMdAddCircle } from "react-icons/io";
 
 export const DashPage = () => {
   const [url, serUrl] = useState(
-    "http://localhost:8080/api/admin/countAdmin"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/countAdmin"
   );
   const [adcount, setadcount] = useState();
 
   const [urltwo, setUrltwo] = useState(
-    "http://localhost:8080/api/user/employeeCount"
+    "https://hrms-backend-tqlm.onrender.com/api/user/employeeCount"
   );
   const [empcount, setempcount] = useState();
 
   const [urltree, setUrltree] = useState(
-    "http://localhost:8080/api/admin/allEmployeesalarysum"
+    "https://hrms-backend-tqlm.onrender.com/api/admin/allEmployeesalarysum"
   );
   const [sal, setSal] = useState();
 

@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export const Python = () => {
 
     const [url, setUrl] = useState(
-        "http://localhost:8080/api/admin/pythonEmployeeData"
+        "https://hrms-backend-tqlm.onrender.com/api/admin/pythonEmployeeData"
       );
       const [employee, setEmployee] = useState([]);
       const [amount, setAmount] = useState();
